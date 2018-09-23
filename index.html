@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+   <title>Brooks Robison | UOP Mock Project</title>
+
+   <!--BOOTSTRAP Javascript CDN Support-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+   <!--BOOTSTRAP CSS-->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+   <!--FONT AWESOME-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+   <script src="https://use.fontawesome.com/8072aefecb.js"></script>
+
+   <!-- MATERIAL DESIGN FOR BOOTSTRAP - http://fezvrasta.github.io/bootstrap-material-design/ -->
+   <!-- <link rel="stylesheet" href="content/bootstrap-material-design.min.css" type="text/css"> -->
+
+   <!--CUSTOM CSS-->
+   <link rel="stylesheet" type="text/css" href="index.css">
+
+   <!--CUSTOM JS-->
+   <script src="js/index.js"></script>
+
+</head>
+   <body>
+      <!-- <header> <!--HEADER START--> -->
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Mock Project</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarsExampleDefault"data-target="#navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarsExampleDefault" class="navbar-collapse collapse show">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Student Name</a>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#"><i class="far fa-envelope fa-2x mr-sm-1"></i></a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#"><i class="far fa-comment fa-2x ml-sm-1"></i></a>
+                  </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control ml-sm-2" placeholder="Search" aria-label="Search" type="search">
+                  <button class="btn btn-outline-success my-2 my-sm-0 my-sm-2" type="submit">Search</button>
+               </form>
+            </div>
+         </nav>
+      <!-- </header> <!--HEADER END--> -->
+
+      <main role="main"> <!--MAIN START-->
+         <div class="jumbotron">
+            <div class="containter">
+               <h1 class="display-3">Brooks Robison</h1>
+            </div>
+         </div>
+
+         <div class="container">
+            <h2>Please enter the following information below to submit your post.</h2>
+            <form class="needs-validation" novalidate>
+               <div class="form-group">
+                  <label for="inputSubject" class="col-sm-1 col-form-label"><h4>Subject</h4></label>
+                  <div class="input-group row">
+                     <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputSubject" name="mysubject" placeholder="Enter your subject here">
+                     </div>
+                  </div>
+                  <label for="inputPost" class="col-sm-2 col-form-label"><h4>Post</h4></label>
+                  <div class="input-group row">
+                     <div class="col-sm-8">
+                        <textarea id="inputPost" name="post" class="form-control" placeholder="Enter your post here" name="mypost" rows="12" required="required"></textarea>
+                     </div>
+                  </div>
+               </div>
+               <h4>Add Attachments</h3>
+               <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Select a file: </label>
+                  <div class="col-sm-5">
+                     <input type="file" class="form-control" id="inputEmail" name="myfile">
+                  </div>
+               </div>
+            </form>
+         </div>
+      </main> <!--MAIN END-->
+
+      <footer> <!--FOOTER START-->
+
+      </footer> <!--FOOTER END-->
+
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+   </body>
+
+</html>
