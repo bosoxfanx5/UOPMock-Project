@@ -23,8 +23,7 @@
    <!--CUSTOM CSS-->
    <link rel="stylesheet" type="text/css" href="index.css">
 
-   <!--CUSTOM JS-->
-   <script src="js/index.js"></script>
+
 
 </head>
    <body>
@@ -76,7 +75,7 @@
          </div>
 
          <div class="container">
-            <form>
+            <form name="project_form"  onSubmit="postProject();">
                <p><i class="fas fa-star-of-life"></i><i><span> Indicates a required field.</span></i></p>
                <div class="form-group">
                   <h4 class="display-4 border-bottom">Project Information</h4>
@@ -89,7 +88,7 @@
                   <i class="fas fa-star-of-life"></i><label for="instructions" class="col-sm-2 col-form-label"><h3>Instructions</h3></label>
                   <div class="input-group row">
                      <div class="col-sm-12">
-                        <textarea id="instructions" name="instructions" class="form-control" placeholder="Enter your instructions here" name="myinstructions" rows="12" cols="8" required style="resize:both; max-width:100%"></textarea>
+                        <textarea id="instructions" name="instructions" class="form-control" placeholder="Enter your instructions here" name="myinstructions" rows="8" cols="8" required style="resize:both; max-width:100%"></textarea>
                      </div>
                   </div>
 
@@ -107,14 +106,14 @@
                      <div class="input-group row">
                         <div class="col-sm-8">
                            <label for="available" class="col-form-label">Available:</label>
-                           <label class="col-sm-2 radio-inline"><input type="radio" name="available" value="yes"> Yes</label>
-                           <label class="col-sm-2 radio-inline"><input type="radio" name="available" value="no"> No</label>
+                           <label class="col-sm-2 radio-inline"><input type="radio" name="available" value="Yes" checked> Yes</label>
+                           <label class="col-sm-2 radio-inline"><input type="radio" name="available" value="No"> No</label>
                         </div>
                      </div>
                      <div class="input-group row">
                         <div class="col-sm-12">
                            <label for="date" class="col-control-label">Enter Date and Time Restrictions:</label>
-                           <label class="input-control col-sm-8">Display On  <input type="date" name="date"><i> Enter date as mm/dd/yyyy.</i></label><br>
+                           <label class="input-control col-sm-8">Display On  <input type="date" name="date" id="displayOn"><i> Enter date as mm/dd/yyyy.</i></label><br>
                         </div>
                      </div><br>
                   </div><br>
@@ -123,7 +122,7 @@
                      <div class="input-group row">
                         <div class="col-sm-12">
                            <i class="fas fa-star-of-life"></i>  <label for="date" class="col-control-label">Due Date:</label>
-                           <label class="input-control col-sm-8"><input type="date" name="date"><i> Enter date as mm/dd/yyyy.</i></label><br>
+                           <label class="input-control col-sm-8"><input type="date" name="date" id="dueDate"><i> Enter date as mm/dd/yyyy.</i></label><br>
                         </div>
                      </div>
                      <div class="input-group row">
@@ -138,9 +137,9 @@
                      </div><br>
                   </div>
                   <div class="form-group row">
-                     <div class="col-sm-5 col-offset-"><br>
-                        <button class="btn btn-success" type="submit">Submit</button>
-                        <button class="btn btn-secondary-lg" type="reset">Cancel</button>
+                     <div class="col-sm-5"><br>
+                        <button class="btn btn-success" type="button" onClick='postProject();'>Submit</button>
+                        <button class="btn btn-secondary" type="reset">Cancel</button>
                      </div>
                   </div>
                </div>
@@ -158,6 +157,8 @@
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+   <!--CUSTOM JS-->
+   <script src="post.js"></script>
    </body>
 
 </html>
