@@ -70,31 +70,78 @@
          <div class="jumbotron">
             <div class="containter">
                <h1 class="display-3">Brooks Robison</h1>
+               <p>Projects and assignments can be organized around a particular subject.
+                  Create a new project or assignment using the fields below.</p>
             </div>
          </div>
 
          <div class="container">
-            <h2>Please enter the following information below to submit your post.</h2>
-            <form class="needs-validation" novalidate>
+            <form>
+               <p><i class="fas fa-star-of-life"></i><i><span> Indicates a required field.</span></i></p>
                <div class="form-group">
-                  <label for="inputSubject" class="col-sm-1 col-form-label"><h4>Subject</h4></label>
+                  <h4 class="display-4 border-bottom">Project Information</h4>
+                  <i class="fas fa-star-of-life"></i><label for="inputName" class="col-sm-1 col-form-label"><h3>Name</h3></label>
                   <div class="input-group row">
                      <div class="col-sm-8">
-                        <input type="text" class="form-control" id="inputSubject" name="mysubject" placeholder="Enter your subject here">
+                        <input type="text" class="form-control" id="inputName" name="myname" placeholder="Enter your project name here" required>
                      </div>
                   </div>
-                  <label for="inputPost" class="col-sm-2 col-form-label"><h4>Post</h4></label>
+                  <i class="fas fa-star-of-life"></i><label for="instructions" class="col-sm-2 col-form-label"><h3>Instructions</h3></label>
                   <div class="input-group row">
-                     <div class="col-sm-8">
-                        <textarea id="inputPost" name="post" class="form-control" placeholder="Enter your post here" name="mypost" rows="12" required="required"></textarea>
+                     <div class="col-sm-12">
+                        <textarea id="instructions" name="instructions" class="form-control" placeholder="Enter your instructions here" name="myinstructions" rows="12" cols="8" required style="resize:both; max-width:100%"></textarea>
                      </div>
                   </div>
-               </div>
-               <h4>Add Attachments</h3>
-               <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">Select a file: </label>
-                  <div class="col-sm-5">
-                     <input type="file" class="form-control" id="inputEmail" name="myfile">
+
+                  <div class="border-bottom">
+                     <h3>Add Attachments</h3>
+                     <div class="input-group row">
+                        <label for="file" class="col-sm-2 col-form-label">Select a file: </label>
+                        <div class="col-sm-5">
+                           <input type="file" class="form-control" id="file" name="myfile"><br>
+                        </div>
+                     </div>
+                  </div><br>
+                  <div class="border-bottom">
+                     <h3>Project Availability</h3>
+                     <div class="input-group row">
+                        <div class="col-sm-8">
+                           <label for="available" class="col-form-label">Available:</label>
+                           <label class="col-sm-2 radio-inline"><input type="radio" name="available" value="yes"> Yes</label>
+                           <label class="col-sm-2 radio-inline"><input type="radio" name="available" value="no"> No</label>
+                        </div>
+                     </div>
+                     <div class="input-group row">
+                        <div class="col-sm-12">
+                           <label for="date" class="col-control-label">Enter Date and Time Restrictions:</label>
+                           <label class="input-control col-sm-8">Display On  <input type="date" name="date"><i> Enter date as mm/dd/yyyy.</i></label><br>
+                        </div>
+                     </div><br>
+                  </div><br>
+                  <div class="border-bottom">
+                     <h3>Project Settings</h3>
+                     <div class="input-group row">
+                        <div class="col-sm-12">
+                           <i class="fas fa-star-of-life"></i>  <label for="date" class="col-control-label">Due Date:</label>
+                           <label class="input-control col-sm-8"><input type="date" name="date"><i> Enter date as mm/dd/yyyy.</i></label><br>
+                        </div>
+                     </div>
+                     <div class="input-group row">
+                        <label for="courses" class="col-sm-2"><i class="fas fa-star-of-life"></i>  Select the course: </label>
+                        <select class="form-control col-sm-2" id="courses">
+                           <option selected>Choose...</option>
+                           <option value="cs213">CS 213</option>
+                           <option value="cs308">CS 308</option>
+                           <option value="cs432">CS 432</option>
+                           <option value="cs313">CS 313</option>
+                        </select>
+                     </div><br>
+                  </div>
+                  <div class="form-group row">
+                     <div class="col-sm-5 col-offset-"><br>
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <button class="btn btn-secondary-lg" type="reset">Cancel</button>
+                     </div>
                   </div>
                </div>
             </form>
